@@ -1,0 +1,17 @@
+*{
+  justify-content: center;
+  align-items: center;
+  background-color:azure;
+}
+
+
+.square{
+  width:100px;
+  height: 100px;
+
+}
+
+.board{
+justify-content: center;
+
+}
