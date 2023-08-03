@@ -70,7 +70,7 @@ const Board = ({ squares, xIsNext, onReset, onPlay }: BoardProps) => {
         <Square value={squares[8]} onSquareClick={() => handleClick(8)} />
       </div>
       <div className="text-center mt-4">
-        <button className="btn btn-secondary" onClick={onReset}>
+        <button className="btn btn-outline-light" onClick={onReset}>
           Reset
         </button>
       </div>
