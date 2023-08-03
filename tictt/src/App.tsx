@@ -1,7 +1,6 @@
-import { useState } from 'react'
-import './App.css'
-import Board from './Board'
-
+import { useState } from "react";
+import "./App.css";
+import Game from "./Game";
 
 function App() {
   return (
@@ -9,12 +8,11 @@ function App() {
       <div className="row">
         <div className="col">
           <h1 className="text-center mt-4 mb-3">Tic Tac Toe</h1>
-          <Board squares={[]} xIsNext={false} onReset={()=>(console.log('reset clicked'))}
-        />
+          <Game />
         </div>
       </div>
     </div>
   );
 }
 
-export default App
+export default App;

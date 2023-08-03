@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 interface SquareProps {
   value: string | null;
@@ -6,12 +6,17 @@ interface SquareProps {
 }
 
 const Square = ({ value, onSquareClick }: SquareProps) => {
+  const backgroundColor = value === "X" ? "pink" : value === "O" ? "lightblue" : "black";
   return (
-    <button className="square btn btn-lg btn-outline-dark" onClick={onSquareClick}>
+    <button
+      className="square btn btn-lg btn-outline-light"
+      onClick={onSquareClick}
+      style={{ background: backgroundColor }}
+    >
       {value}
-      <p>THIS IS A SQUARE</p>
+      {/* <p>THIS IS A SQUARE</p> */}
     </button>
   );
 };
 
-export default Square
+export default Square;
