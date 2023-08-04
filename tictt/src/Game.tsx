@@ -13,7 +13,6 @@ const Game = () => {
     setCurrentMove(nextHistory.length - 1);
   }
 
-
   function handleReset() {
     setHistory([Array(9).fill(null)]);
     setCurrentMove(0);

@@ -1,18 +1,34 @@
-*{
+* {
   justify-content: center;
   align-items: center;
-  background-color:black;
+  background-color: black;
   color: antiquewhite;
 }
 
-
-.square{
-  width:100px;
-  height: 100px;
-
+.game-board {
+  margin-top: 20px;
 }
 
+.game-over-message {
+  text-align: center;
+  margin-top: 20px;
+}
 .board{
-justify-content: center;
-
+  justify-content: center;
 }
+
+.square {
+  width: 100px;
+  height: 100px;
+  font-size: 48px;
+  background-color: black;
+  color: antiquewhite;
+  border: 1px solid antiquewhite;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.square:hover {
+  background-color: #333;
+}
+

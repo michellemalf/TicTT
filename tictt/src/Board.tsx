@@ -50,6 +50,7 @@ const Board = ({ squares, xIsNext, onReset, onPlay }: BoardProps) => {
   winner
     ? (status = `Winner: ${winner}`)
     : (status = `Next player: ${xIsNext ? "X" : "O"}`);
+    
 
   return (
     <div className="board text-center">
