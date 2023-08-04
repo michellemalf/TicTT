@@ -2,15 +2,16 @@ import React from "react";
 import Square from "./Square";
 
 interface BoardProps {
-  squares: any;
-  xIsNext: any;
-  onPlay: any;
-  onReset: () => void;
+  squares: string[],
+  xIsNext: boolean,
+  onPlay: ([]) => void,
+  onReset: () => void
 }
 
 const Board = ({ squares, xIsNext, onReset, onPlay }: BoardProps) => {
   const handleClick = (i: number) => {
     console.log("clicked");
+
     if (squares[i] || calculateWinner(squares)) {
       return;
     }
@@ -20,7 +21,7 @@ const Board = ({ squares, xIsNext, onReset, onPlay }: BoardProps) => {
     onPlay(nextSquares);
   };
 
-  const calculateWinner = (squares: Array<string>): string | null => {
+  const calculateWinner = (squares: string[])=> {
     const lines = [
       [0, 1, 2],
       [3, 4, 5],
